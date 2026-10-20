@@ -1,0 +1,56 @@
+<div class="pd-site" data-page="Product">
+<header class="pd-head" id="pd-head">
+    <div class="pd-head-row">
+        <button type="button" class="pd-burger" aria-label="Menu" onclick="ProductJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="pd-logo" href="Home" aria-label="Home"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#B8445F"/><g fill="#FBF7F2"><circle cx="20" cy="11" r="5"/><circle cx="29" cy="18" r="5"/><circle cx="26" cy="28" r="5"/><circle cx="14" cy="28" r="5"/><circle cx="11" cy="18" r="5"/></g><circle cx="20" cy="20" r="4" fill="#E9C46A"/></svg><span>{plhd_brand}</span></a>
+        <nav class="pd-nav" id="pd-nav" aria-label="Main">
+            <div class="pd-nav-top"><b>Menu</b><button type="button" class="pd-ibtn" aria-label="Close" onclick="ProductJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="pd-menu"><li><a class="pd-ml" href="Home">Home</a></li><li><a class="pd-ml" href="Shop">Shop</a></li><li><a class="pd-ml" href="About">About</a></li><li><a class="pd-ml" href="Track">Track an order</a></li><li><a class="pd-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <form class="pd-search" onsubmit="return ProductJs.go()" role="search">
+            <span class="pd-search-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="pd-q" placeholder="Search bouquets" autocomplete="off" maxlength="40" oninput="ProductJs.search(this.value)" aria-label="Search bouquets">
+            <div class="pd-sugg" id="pd-sugg"></div>
+        </form>
+        <a class="pd-cart" href="Cart" aria-label="Cart"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><i class="pd-cartn" id="pd-cartn">0</i></a>
+    </div>
+    <div class="pd-scrim" id="pd-scrim" onclick="ProductJs.closeNav()"></div>
+</header>
+<main class="pd-main">
+<div id="pd-found" {plhd_hidefound}>
+<section class="pd-wrap pd-sec">
+    <nav class="pd-crumbs" aria-label="Breadcrumb"><a href="Shop">Shop</a><span>/</span><b>{plhd_title}</b></nav>
+    <input type="hidden" id="pd-item" value="{plhd_key}">
+    <div class="pd-prod">
+        <div class="pd-gal"><div class="pd-pic"><img id="pd-main" src="{plhd_img}" alt="{plhd_alt}"><video id="pd-video" controls playsinline preload="metadata" poster="{plhd_img}" hidden></video></div>{plhd_thumbs}</div>
+        <div class="pd-info">
+            <div class="pd-eyebrow">{plhd_occ}</div>
+            <h1>{plhd_title}</h1>
+            <p class="pd-blurb">{plhd_blurb}</p>
+            <div class="pd-price" id="pd-price">{plhd_price}</div>
+            <fieldset class="pd-opts"><legend>Choose a size</legend>{plhd_sizes}</fieldset>
+            <fieldset class="pd-opts"><legend>Add something extra</legend>{plhd_addons}</fieldset>
+            <div class="pd-buy">
+                <div class="pd-qty"><button type="button" aria-label="Fewer" onclick="ProductJs.step(-1)">&minus;</button><input type="number" id="pd-qty" value="1" min="1" max="20" aria-label="Quantity" onchange="ProductJs.quote()"><button type="button" aria-label="More" onclick="ProductJs.step(1)">+</button></div>
+                <button type="button" class="pd-btn pd-add" id="pd-add" onclick="ProductJs.add()">Add to cart</button>
+            </div>
+            <div class="pd-note" id="pd-stock" aria-live="polite">{plhd_stock}</div>
+            <p class="pd-text">{plhd_text}</p>
+            <ul class="pd-facts">{plhd_facts}</ul>
+        </div>
+    </div>
+</section>
+<section class="pd-wrap pd-sec">
+    <div class="pd-sec-h"><h2>You may also like</h2><a class="pd-more" href="Shop">See all bouquets</a></div>
+    <div class="pd-grid">{plhd_related}</div>
+</section>
+</div>
+<section class="pd-wrap pd-sec pd-missing" id="pd-missing" {plhd_hidemissing}>
+    <h1>We could not find that bouquet</h1>
+    <p class="pd-lead">It may have been retired for the season. Take a look at what is fresh today.</p>
+    <div class="pd-act"><a class="pd-btn" href="Shop">Shop bouquets</a></div>
+</section>
+</main>
+<footer class="pd-foot">{plhd_foot}</footer>
+<div class="pd-toast" id="pd-toast" role="status" aria-live="polite"></div>
+</div>

@@ -1,0 +1,114 @@
+[
+  {
+    "when": "2026-10-19T22:04:39.2199226Z",
+    "userId": "u-admin",
+    "who": "Administrator",
+    "action": "new password",
+    "target": "admin",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:07:47.4451107Z",
+    "userId": "u-admin",
+    "who": "Administrator",
+    "action": "sign in",
+    "target": "admin",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:32:49.598651Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:35:23.3591089Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:45:30.1924514Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:47:11.7386724Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "upload media",
+    "target": "1 file",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:47:19.6241432Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "upload media",
+    "target": "1 file",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:47:31.163623Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "upload media",
+    "target": "1 file",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:47:49.486449Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "upload media",
+    "target": "1 file",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:48:43.5330844Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "save bouquet",
+    "target": "Coral Reef",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:53:40.084471Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:54:01.8120137Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "save bouquet",
+    "target": "Coral Reef",
+    "ok": true
+  },
+  {
+    "when": "2026-10-19T23:57:07.6103293Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-20T00:44:11.2619608Z",
+    "userId": "u-demo",
+    "who": "Demo manager",
+    "action": "sign in",
+    "target": "demo",
+    "ok": true
+  }
+]

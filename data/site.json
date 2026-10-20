@@ -1,0 +1,731 @@
+{
+  "brand": "Petalbound",
+  "tagline": "Seasonal flowers, cut the morning they leave.",
+  "phone": "555-0142",
+  "email": "hello@petalbound.example",
+  "address": "14 Orchard Row, Marlow Bay",
+  "hours": "Mon to Sat, 8am to 6pm. Closed Sundays.",
+  "publicUrl": "",
+  "hero": {
+    "eyebrow": "Marlow Bay flower studio",
+    "title": "Fresh flowers, every morning",
+    "text": "Hand-tied bouquets from seasonal growers, delivered across Marlow Bay or ready for pickup. Order before 2pm for same-day delivery.",
+    "button": "Shop bouquets",
+    "image": "images/hero.webp"
+  },
+  "promises": [
+    {
+      "title": "Cut to order",
+      "text": "We buy fresh each morning and arrange only what has been ordered."
+    },
+    {
+      "title": "Same-day delivery",
+      "text": "Order before 2pm and we deliver across the city the same day."
+    },
+    {
+      "title": "Seven-day promise",
+      "text": "If your flowers fade within seven days, tell us and we will make it right."
+    }
+  ],
+  "aboutTitle": "A small studio with a big love of flowers",
+  "aboutLead": "Petalbound is a small flower studio in Marlow Bay. We arrange everything by hand, in the morning, for the day\u0027s orders.",
+  "aboutParagraphs": [
+    "We started with one bucket of tulips and a bicycle. Today we still buy from the same few growers, and we still work in small batches so nothing sits in a cold room for a week.",
+    "Every bouquet is wrapped in recycled kraft paper and tied with a ribbon. We do not use floral foam, and we compost every stem that is not sold.",
+    "Our team delivers across the city by van and bike. If you would rather collect, the studio door is open from eight in the morning."
+  ],
+  "care": [
+    {
+      "title": "Trim the stems",
+      "text": "Cut about two centimetres at an angle and put them in clean water straight away."
+    },
+    {
+      "title": "Change the water",
+      "text": "Fresh water every other day keeps flowers looking good for much longer."
+    },
+    {
+      "title": "Keep them cool",
+      "text": "Away from direct sun, radiators and ripening fruit."
+    }
+  ],
+  "occasions": [
+    {
+      "key": "birthday",
+      "label": "Birthday",
+      "blurb": "Bright, happy and a little bit extra.",
+      "image": "images/occasions/birthday.webp"
+    },
+    {
+      "key": "romance",
+      "label": "Love and romance",
+      "blurb": "Roses, peonies and deep colours.",
+      "image": "images/occasions/romance.webp"
+    },
+    {
+      "key": "sympathy",
+      "label": "Sympathy",
+      "blurb": "Calm whites and soft greens.",
+      "image": "images/occasions/sympathy.webp"
+    },
+    {
+      "key": "just-because",
+      "label": "Just because",
+      "blurb": "No reason needed.",
+      "image": "images/occasions/just-because.webp"
+    }
+  ],
+  "bouquets": [
+    {
+      "key": "rosewater-morning",
+      "title": "Rosewater Morning",
+      "blurb": "Blush roses, peony and cosmos",
+      "text": "A soft, romantic mix of blush roses and a single full peony, with cosmos and sprigs of eucalyptus. Wrapped in kraft paper with a rose ribbon.",
+      "colors": "pink, blush, rose",
+      "image": "",
+      "photos": [
+        "images/bouquets/rosewater-morning.webp"
+      ],
+      "occasions": [
+        "romance",
+        "birthday"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 42
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 58
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 78
+        }
+      ],
+      "stock": 7,
+      "published": true,
+      "featured": true,
+      "added": -4
+    },
+    {
+      "key": "sunday-marmalade",
+      "title": "Sunday Marmalade",
+      "blurb": "Orange and butter tulips",
+      "text": "Tulips in marmalade orange and butter yellow, cut tight so they open slowly on the table over several days.",
+      "colors": "orange, yellow",
+      "image": "",
+      "photos": [
+        "images/bouquets/sunday-marmalade.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "just-because"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 36
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 48
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 64
+        }
+      ],
+      "stock": 10,
+      "published": true,
+      "featured": true,
+      "added": -60
+    },
+    {
+      "key": "snowfall-peonies",
+      "title": "Snowfall Peonies",
+      "blurb": "Blush and white peonies",
+      "text": "Big, generous peonies in white and the palest pink. Seasonal and short lived, so we cut them to order while the buds are fat.",
+      "colors": "white, blush, cream",
+      "image": "",
+      "photos": [
+        "images/bouquets/snowfall-peonies.webp"
+      ],
+      "occasions": [
+        "romance",
+        "sympathy"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 58
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 76
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 98
+        }
+      ],
+      "stock": 5,
+      "published": true,
+      "featured": true,
+      "added": -90
+    },
+    {
+      "key": "field-notes",
+      "title": "Field Notes",
+      "blurb": "Daisies, cosmos and soft fillers",
+      "text": "A loose, wild-looking bunch of daisies, cosmos and lilac filler. Cheerful on a kitchen counter.",
+      "colors": "white, pink, lilac",
+      "image": "",
+      "photos": [
+        "images/bouquets/field-notes.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "just-because"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 34
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 46
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 62
+        }
+      ],
+      "stock": 2,
+      "published": true,
+      "featured": true,
+      "added": -10
+    },
+    {
+      "key": "velvet-hour",
+      "title": "Velvet Hour",
+      "blurb": "Deep red roses with a dark peony",
+      "text": "Long-lasting garden roses in claret and crimson with one dusky peony. A classic, made a little moodier.",
+      "colors": "red, crimson, claret",
+      "image": "",
+      "photos": [
+        "images/bouquets/velvet-hour.webp"
+      ],
+      "occasions": [
+        "romance"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 52
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 72
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 96
+        }
+      ],
+      "stock": 6,
+      "published": true,
+      "featured": true,
+      "added": -120
+    },
+    {
+      "key": "lilac-dusk",
+      "title": "Lilac Dusk",
+      "blurb": "Lavender and violet cosmos",
+      "text": "Cosmos in every shade from pale lilac to deep violet, with white daisies for contrast.",
+      "colors": "purple, lilac, violet",
+      "image": "",
+      "photos": [
+        "images/bouquets/lilac-dusk.webp"
+      ],
+      "occasions": [
+        "just-because",
+        "sympathy"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 38
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 52
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 70
+        }
+      ],
+      "stock": 9,
+      "published": true,
+      "featured": false,
+      "added": -45
+    },
+    {
+      "key": "orchard-blush",
+      "title": "Orchard Blush",
+      "blurb": "Peach roses and peonies",
+      "text": "Peach and apricot roses with ruffled peonies. Warm and gentle, like late afternoon light.",
+      "colors": "peach, apricot, coral",
+      "image": "",
+      "photos": [
+        "images/bouquets/orchard-blush.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "romance"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 44
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 60
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 82
+        }
+      ],
+      "stock": 6,
+      "published": true,
+      "featured": false,
+      "added": -25
+    },
+    {
+      "key": "little-sunshine",
+      "title": "Little Sunshine",
+      "blurb": "Yellow daisies and golden filler",
+      "text": "A small, bright bunch of yellow daisies. Sends a message of get well soon, congratulations or just hello.",
+      "colors": "yellow, gold",
+      "image": "",
+      "photos": [
+        "images/bouquets/little-sunshine.webp"
+      ],
+      "occasions": [
+        "just-because",
+        "birthday"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 28
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 38
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 52
+        }
+      ],
+      "stock": 14,
+      "published": true,
+      "featured": false,
+      "added": -200
+    },
+    {
+      "key": "tulip-parade",
+      "title": "Tulip Parade",
+      "blurb": "Pink and rose tulips",
+      "text": "Tulips in every shade of pink, wrapped loosely. Available in spring and as long as the growers have them.",
+      "colors": "pink, rose",
+      "image": "",
+      "photos": [
+        "images/bouquets/tulip-parade.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "just-because"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 34
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 46
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 60
+        }
+      ],
+      "stock": 10,
+      "published": true,
+      "featured": false,
+      "added": -15
+    },
+    {
+      "key": "meadow-pour",
+      "title": "Meadow Pour",
+      "blurb": "A bright mix of cosmos, peony and tulips",
+      "text": "A colourful, joyful arrangement for people who love colour: cosmos, a purple peony, daisies, tulips and yellow roses.",
+      "colors": "mixed, bright, purple, yellow",
+      "image": "",
+      "photos": [
+        "images/bouquets/meadow-pour.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "just-because"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 40
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 54
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 72
+        }
+      ],
+      "stock": 8,
+      "published": true,
+      "featured": false,
+      "added": -70
+    },
+    {
+      "key": "white-linen",
+      "title": "White Linen",
+      "blurb": "White roses, peonies and daisies",
+      "text": "All white, all calm. White roses and peonies with small daisies and soft green filler.",
+      "colors": "white, cream, green",
+      "image": "",
+      "photos": [
+        "images/bouquets/white-linen.webp"
+      ],
+      "occasions": [
+        "sympathy",
+        "romance"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 46
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 62
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 84
+        }
+      ],
+      "stock": 7,
+      "published": true,
+      "featured": false,
+      "added": -150
+    },
+    {
+      "key": "coral-reef",
+      "title": "Coral Reef",
+      "blurb": "Coral peonies and tulips",
+      "text": "Peonies in coral and tangerine with tulips and a few roses. A bold, happy arrangement.",
+      "colors": "coral, orange, tangerine",
+      "image": "",
+      "photos": [
+        "images/bouquets/coral-reef.webp",
+        "images/occasions/just-because.webp",
+        "images/uploads/656igbpbh3v4.mp4"
+      ],
+      "occasions": [
+        "birthday"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 46
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 62
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 84
+        }
+      ],
+      "stock": 6,
+      "published": true,
+      "featured": false,
+      "added": -35
+    },
+    {
+      "key": "midnight-garden",
+      "title": "Midnight Garden",
+      "blurb": "Plum roses and burgundy cosmos",
+      "text": "Dark plum roses, burgundy peonies and deep pink cosmos. Dramatic and quietly luxurious.",
+      "colors": "plum, burgundy, deep pink",
+      "image": "",
+      "photos": [
+        "images/bouquets/midnight-garden.webp"
+      ],
+      "occasions": [
+        "romance"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 50
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 68
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 90
+        }
+      ],
+      "stock": 5,
+      "published": true,
+      "featured": false,
+      "added": -5
+    },
+    {
+      "key": "honey-bee",
+      "title": "Honey Bee",
+      "blurb": "Golden roses with daisies",
+      "text": "Honey-yellow roses and white daisies with cosmos. The shop\u0027s most cheerful bunch for a birthday.",
+      "colors": "yellow, gold, honey",
+      "image": "",
+      "photos": [
+        "images/bouquets/honey-bee.webp"
+      ],
+      "occasions": [
+        "birthday",
+        "just-because"
+      ],
+      "sizes": [
+        {
+          "key": "small",
+          "label": "Small (about 12 stems)",
+          "price": 38
+        },
+        {
+          "key": "classic",
+          "label": "Classic (about 20 stems)",
+          "price": 52
+        },
+        {
+          "key": "grand",
+          "label": "Grand (about 35 stems)",
+          "price": 70
+        }
+      ],
+      "stock": 9,
+      "published": true,
+      "featured": false,
+      "added": -300
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does same-day delivery work?",
+      "a": "Place your order before 2pm on a day we are open and choose today as the delivery date. We deliver in the slot you pick."
+    },
+    {
+      "q": "Can I add a card message?",
+      "a": "Yes. Write your message at checkout and we will hand-write it on a card."
+    },
+    {
+      "q": "What if nobody is home?",
+      "a": "Our courier will try the number you gave, then leave the flowers with a neighbour or in a safe place and let you know."
+    },
+    {
+      "q": "Can I change or cancel an order?",
+      "a": "Contact us as early as you can. We can usually change an order until we start arranging it."
+    }
+  ],
+  "addons": [
+    {
+      "key": "glass-vase",
+      "label": "Glass vase",
+      "price": 14
+    },
+    {
+      "key": "box-of-chocolates",
+      "label": "Box of chocolates",
+      "price": 9
+    },
+    {
+      "key": "small-soy-candle",
+      "label": "Small soy candle",
+      "price": 8
+    }
+  ],
+  "zones": [
+    {
+      "key": "central-marlow-bay",
+      "name": "Central Marlow Bay",
+      "fee": 8,
+      "freeOver": 75,
+      "prefixes": [
+        "941",
+        "940"
+      ]
+    },
+    {
+      "key": "greater-marlow-bay",
+      "name": "Greater Marlow Bay",
+      "fee": 14,
+      "freeOver": 120,
+      "prefixes": [
+        "943",
+        "944",
+        "945"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "key": "morning",
+      "label": "Morning, 9am to 12pm"
+    },
+    {
+      "key": "afternoon",
+      "label": "Afternoon, 12pm to 4pm"
+    },
+    {
+      "key": "evening",
+      "label": "Evening, 4pm to 7pm"
+    }
+  ],
+  "couriers": [
+    "Studio van",
+    "Bike courier"
+  ],
+  "blackout": [],
+  "closedDays": [
+    0
+  ],
+  "taxPercent": 7,
+  "cutOffHour": 14,
+  "maxDaysAhead": 30,
+  "acceptCard": true,
+  "acceptLater": true,
+  "lowStock": 3,
+  "maxVideoMb": 30,
+  "blocks": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "visible": true,
+      "eyebrow": "",
+      "title": "",
+      "text": "",
+      "media": "",
+      "poster": "",
+      "caption": "",
+      "side": "left"
+    },
+    {
+      "id": "promises",
+      "type": "promises",
+      "visible": true,
+      "eyebrow": "",
+      "title": "",
+      "text": "",
+      "media": "",
+      "poster": "",
+      "caption": "",
+      "side": "left"
+    },
+    {
+      "id": "favourites",
+      "type": "favourites",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Our favourites",
+      "text": "",
+      "media": "",
+      "poster": "",
+      "caption": "",
+      "side": "left"
+    },
+    {
+      "id": "occasions",
+      "type": "occasions",
+      "visible": true,
+      "eyebrow": "",
+      "title": "Shop by occasion",
+      "text": "",
+      "media": "",
+      "poster": "",
+      "caption": "",
+      "side": "left"
+    },
+    {
+      "id": "delivery",
+      "type": "delivery",
+      "visible": true,
+      "eyebrow": "Delivery",
+      "title": "We deliver across the city",
+      "text": "",
+      "media": "",
+      "poster": "",
+      "caption": "",
+      "side": "left"
+    }
+  ]
+}

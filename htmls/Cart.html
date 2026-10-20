@@ -1,0 +1,79 @@
+<div class="ct-site" data-page="Cart">
+<header class="ct-head" id="ct-head">
+    <div class="ct-head-row">
+        <button type="button" class="ct-burger" aria-label="Menu" onclick="CartJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="ct-logo" href="Home" aria-label="Home"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#B8445F"/><g fill="#FBF7F2"><circle cx="20" cy="11" r="5"/><circle cx="29" cy="18" r="5"/><circle cx="26" cy="28" r="5"/><circle cx="14" cy="28" r="5"/><circle cx="11" cy="18" r="5"/></g><circle cx="20" cy="20" r="4" fill="#E9C46A"/></svg><span>{plhd_brand}</span></a>
+        <nav class="ct-nav" id="ct-nav" aria-label="Main">
+            <div class="ct-nav-top"><b>Menu</b><button type="button" class="ct-ibtn" aria-label="Close" onclick="CartJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="ct-menu"><li><a class="ct-ml" href="Home">Home</a></li><li><a class="ct-ml" href="Shop">Shop</a></li><li><a class="ct-ml" href="About">About</a></li><li><a class="ct-ml" href="Track">Track an order</a></li><li><a class="ct-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <form class="ct-search" onsubmit="return CartJs.go()" role="search">
+            <span class="ct-search-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="ct-q" placeholder="Search bouquets" autocomplete="off" maxlength="40" oninput="CartJs.search(this.value)" aria-label="Search bouquets">
+            <div class="ct-sugg" id="ct-sugg"></div>
+        </form>
+        <a class="ct-cart" href="Cart" aria-label="Cart"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><i class="ct-cartn" id="ct-cartn">0</i></a>
+    </div>
+    <div class="ct-scrim" id="ct-scrim" onclick="CartJs.closeNav()"></div>
+</header>
+<main class="ct-main">
+<section class="ct-wrap ct-sec">
+    <div class="ct-eyebrow">Checkout</div>
+    <h1>Your cart</h1>
+    <div class="ct-empty" id="ct-empty" hidden>
+        <p>Your cart is empty.</p>
+        <a class="ct-btn" href="Shop">Browse bouquets</a>
+    </div>
+    <div class="ct-layout" id="ct-layout" hidden>
+        <div class="ct-left">
+            <div class="ct-box ct-lines" id="ct-lines"></div>
+            <form class="ct-box ct-form" id="ct-form" onsubmit="return CartJs.place()" novalidate>
+                <h2>How would you like it?</h2>
+                <div class="ct-modes" role="radiogroup" aria-label="Delivery or pickup">
+                    <label class="ct-mode"><input type="radio" name="ct-mode" id="ct-mode-d" value="delivery" checked onchange="CartJs.mode()"><span><b>Delivery</b><small>To the door, in your time slot</small></span></label>
+                    <label class="ct-mode"><input type="radio" name="ct-mode" id="ct-mode-p" value="pickup" onchange="CartJs.mode()"><span><b>Pickup</b><small>{plhd_pickup}</small></span></label>
+                </div>
+                <div class="ct-when">
+                    <label class="ct-field" for="ct-date"><span id="ct-datelab">Delivery date</span><select id="ct-date">{plhd_dates}</select><em class="ct-err" id="ct-e-date"></em></label>
+                    <label class="ct-field" for="ct-slot"><span>Time slot</span><select id="ct-slot">{plhd_slots}</select><em class="ct-err" id="ct-e-slot"></em></label>
+                </div>
+                <h2>Your details</h2>
+                <div class="ct-two">
+                    <label class="ct-field" for="ct-name"><span>Your name</span><input type="text" id="ct-name" maxlength="60" autocomplete="name"><em class="ct-err" id="ct-e-name"></em></label>
+                    <label class="ct-field" for="ct-phone"><span>Phone</span><input type="tel" id="ct-phone" maxlength="24" autocomplete="tel"><em class="ct-err" id="ct-e-phone"></em></label>
+                </div>
+                <label class="ct-field" for="ct-email"><span>Email, for your receipt</span><input type="email" id="ct-email" maxlength="80" autocomplete="email"><em class="ct-err" id="ct-e-email"></em></label>
+                <div id="ct-addr" class="ct-addr">
+                    <div class="ct-whohead"><h2>Who is it for?</h2><label class="ct-same" for="ct-same"><input type="checkbox" id="ct-same" onchange="CartJs.same()">Same as above</label></div>
+                    <div class="ct-two">
+                        <label class="ct-field" for="ct-rname"><span>Recipient name</span><input type="text" id="ct-rname" maxlength="60"><em class="ct-err" id="ct-e-rname"></em></label>
+                        <label class="ct-field" for="ct-rphone"><span>Recipient phone (optional)</span><input type="tel" id="ct-rphone" maxlength="24"><em class="ct-err" id="ct-e-rphone"></em></label>
+                    </div>
+                    <label class="ct-field" for="ct-street"><span>Street address</span><input type="text" id="ct-street" maxlength="100" autocomplete="street-address"><em class="ct-err" id="ct-e-street"></em></label>
+                    <div class="ct-two">
+                        <label class="ct-field" for="ct-city"><span>City</span><input type="text" id="ct-city" maxlength="60" autocomplete="address-level2"><em class="ct-err" id="ct-e-city"></em></label>
+                        <label class="ct-field" for="ct-zip"><span>Postcode</span><input type="text" id="ct-zip" maxlength="10" autocomplete="postal-code" oninput="CartJs.zipTyped()"><em class="ct-err" id="ct-e-zip"></em></label>
+                    </div>
+                </div>
+                <label class="ct-field" for="ct-msg"><span>Card message (optional)</span><textarea id="ct-msg" rows="3" maxlength="200" placeholder="We will hand-write this on a card."></textarea><em class="ct-err" id="ct-e-msg"></em></label>
+                <label class="ct-field" for="ct-note"><span>Delivery notes (optional)</span><input type="text" id="ct-note" maxlength="200" placeholder="Gate code, leave with neighbour..."></label>
+                <h2>Payment</h2>
+                <div class="ct-modes">{plhd_pay}</div>
+                <em class="ct-err" id="ct-e-pay"></em>
+            </form>
+        </div>
+        <aside class="ct-sum" aria-label="Order summary">
+            <div class="ct-box">
+                <h2>Summary</h2>
+                <div class="ct-totals" id="ct-totals"></div>
+                <em class="ct-err" id="ct-e-form"></em>
+                <button type="button" class="ct-btn ct-btn-wide" id="ct-place" onclick="CartJs.place()">Place order</button>
+                <p class="ct-fine">{plhd_fine}</p>
+            </div>
+        </aside>
+    </div>
+</section>
+</main>
+<footer class="ct-foot">{plhd_foot}</footer>
+<div class="ct-toast" id="ct-toast" role="status" aria-live="polite"></div>
+</div>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "u-admin",
+    "login": "admin",
+    "name": "Administrator",
+    "title": "Manager",
+    "hash": "pbkdf2$100000$SXPy4zOi9i0\u002B0MRVB6W1XQ==$ou8GoJsUpfSfgJ/TyFrjalK0kI83WeFAABVYeEwvmIA=",
+    "admin": true,
+    "active": true,
+    "mustChange": false,
+    "perms": {}
+  },
+  {
+    "id": "u-demo",
+    "login": "demo",
+    "name": "Demo manager",
+    "title": "Manager",
+    "hash": "pbkdf2$100000$RibTT\u002BDaeKjuaWihQFvP2w==$nnL9GJ3MnYWpvjRAqsqKTHTF\u002BY/3wJ0JbFgJlRJzLFA=",
+    "admin": true,
+    "active": true,
+    "mustChange": false,
+    "perms": {}
+  }
+]

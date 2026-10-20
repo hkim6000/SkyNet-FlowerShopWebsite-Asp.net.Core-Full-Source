@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+.py-site {
+    --py-ink: #2B2523;
+    --py-ink2: #6B5F5A;
+    --py-line: #E8DED3;
+    --py-bg: #FBF7F2;
+    --py-paper: #FFFFFF;
+    --py-soft: #F3EAE0;
+    --py-accent: #B8445F;
+    --py-accent-d: #98324B;
+    --py-green: #4F6B4A;
+    --py-butter: #E9C46A;
+    --py-head: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --py-text: 'Inter', 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: var(--py-text);
+    color: var(--py-ink);
+    background: var(--py-bg);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.py-site *, .py-site *::before, .py-site *::after { box-sizing: border-box; }
+.py-site [hidden] { display: none !important; }
+.py-site a { color: inherit; text-decoration: none; }
+.py-site img { display: block; max-width: 100%; }
+:where(.py-site) :where(button, input, select, textarea) { font: inherit; color: inherit; }
+.py-site h1, .py-site h2, .py-site h3 { font-family: var(--py-head); font-weight: 600; line-height: 1.15; margin: 0; }
+.py-site h1 { font-size: 44px; }
+.py-site h2 { font-size: 28px; }
+.py-site h3 { font-size: 20px; }
+.py-site p { margin: 0; }
+body { margin: 0; }
+.py-main { flex: 1; }
+.py-wrap { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+.py-sec { padding-top: 52px; }
+.py-main > section:last-child { padding-bottom: 64px; }
+.py-site .py-mt { margin-top: 36px; }
+.py-eyebrow { font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--py-accent); margin-bottom: 8px; }
+.py-lead { font-size: 18px; color: var(--py-ink2); margin-top: 12px; max-width: 640px; }
+.py-sec-h { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 22px; }
+.py-more { font-weight: 700; color: var(--py-accent); }
+.py-more:hover { text-decoration: underline; }
+
+.py-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 2px solid var(--py-accent); border-radius: 999px; background: var(--py-accent); color: #fff !important; font-weight: 700; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+.py-btn:hover { background: var(--py-accent-d); border-color: var(--py-accent-d); }
+.py-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.py-btn-ghost { background: transparent; color: var(--py-ink) !important; border-color: var(--py-ink); }
+.py-btn-ghost:hover { background: var(--py-ink); border-color: var(--py-ink); color: #fff !important; }
+.py-btn-wide { width: 100%; }
+.py-ibtn { width: 42px; height: 42px; border: 0; border-radius: 8px; background: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.py-ibtn:hover { background: var(--py-soft); }
+
+.py-head { position: sticky; top: 0; z-index: 60; background: var(--py-paper); border-bottom: 1px solid var(--py-line); }
+.py-head-row { max-width: 1200px; margin: 0 auto; padding: 0 28px; min-height: 72px; display: flex; align-items: center; gap: 22px; }
+.py-burger { display: none; width: 42px; height: 42px; border: 0; background: none; cursor: pointer; }
+.py-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--py-head); font-size: 24px; font-weight: 700; flex: none; }
+.py-nav { display: flex; }
+.py-nav-top { display: none; }
+.py-menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; }
+.py-ml { display: block; padding: 8px 12px; border-radius: 8px; font-weight: 600; color: var(--py-ink2); }
+.py-ml:hover, .py-ml.py-on { color: var(--py-ink); background: var(--py-soft); }
+.py-search { position: relative; margin-left: auto; width: 280px; }
+.py-search input { width: 100%; height: 44px; border: 1px solid var(--py-line); border-radius: 999px; background: var(--py-bg); padding: 0 16px 0 42px; outline: none; }
+.py-search input:focus { border-color: var(--py-ink); background: #fff; }
+.py-search-ic { position: absolute; left: 14px; top: 12px; color: var(--py-ink2); pointer-events: none; }
+.py-sugg { position: absolute; top: calc(100% + 8px); left: 0; right: 0; background: #fff; border: 1px solid var(--py-line); border-radius: 12px; box-shadow: 0 16px 40px rgba(43, 37, 35, 0.14); display: none; overflow: hidden; z-index: 70; }
+.py-sugg.py-open { display: block; }
+.py-sg { display: flex; gap: 12px; align-items: center; padding: 9px 12px; border-bottom: 1px solid var(--py-soft); }
+.py-sg:hover { background: var(--py-soft); }
+.py-sg img { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+.py-sg span { display: flex; flex-direction: column; min-width: 0; }
+.py-sg small { color: var(--py-ink2); font-size: 13px; }
+.py-sg-none { padding: 14px; color: var(--py-ink2); }
+.py-sg-all { display: block; padding: 10px 12px; font-weight: 700; color: var(--py-accent); }
+.py-cart { position: relative; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; flex: none; }
+.py-cart:hover { background: var(--py-soft); }
+.py-cartn { position: absolute; top: 2px; right: 0; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: var(--py-accent); color: #fff; font-style: normal; font-size: 12px; font-weight: 800; line-height: 20px; text-align: center; display: none; }
+.py-cartn.py-has { display: block; }
+.py-scrim { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.45); opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 80; }
+.py-scrim.py-open { opacity: 1; pointer-events: auto; }
+
+.py-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 30px 22px; }
+.py-card { display: flex; flex-direction: column; gap: 4px; }
+.py-card-img { position: relative; display: block; border-radius: 12px; overflow: hidden; background: var(--py-soft); margin-bottom: 8px; aspect-ratio: 4 / 5; }
+.py-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s; }
+.py-card:hover .py-card-img img { transform: scale(1.04); }
+.py-tag { position: absolute; top: 12px; left: 12px; background: var(--py-accent); color: #fff; font-style: normal; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.py-tag-out { background: var(--py-ink); }
+.py-card b { font-family: var(--py-head); font-size: 20px; font-weight: 600; }
+.py-card small { color: var(--py-ink2); font-size: 14px; line-height: 1.4; }
+.py-card em { font-style: normal; font-weight: 700; margin-top: 2px; }
+
+.py-field { display: flex; flex-direction: column; gap: 6px; }
+.py-field > span { font-size: 13px; font-weight: 700; color: var(--py-ink2); }
+.py-field input, .py-field select, .py-field textarea { width: 100%; min-height: 46px; border: 1px solid #D6CBBE; border-radius: 8px; padding: 10px 12px; background: #fff; outline: none; }
+.py-field input:focus, .py-field select:focus, .py-field textarea:focus { border-color: var(--py-ink); }
+.py-err { display: block; font-style: normal; font-size: 13.5px; color: #B3261E; font-weight: 600; }
+.py-err:empty { display: none; }
+.py-ok:not(:empty) { padding: 14px; border-radius: 8px; background: #E8F2EC; color: #1F4E3F; }
+
+.py-foot { margin-top: 40px; background: var(--py-ink); color: #E8DED3; }
+.py-foot-in { max-width: 1200px; margin: 0 auto; padding: 48px 28px 28px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 32px; }
+.py-foot .py-logo { color: #fff; }
+.py-fbrand p { margin-top: 12px; color: #C9BDB2; max-width: 280px; }
+.py-fcol { display: flex; flex-direction: column; gap: 6px; min-width: 0; overflow-wrap: anywhere; }
+.py-fcol b { color: #fff; margin-bottom: 4px; }
+.py-fcol a:hover { color: #fff; text-decoration: underline; }
+.py-foot-b { max-width: 1200px; margin: 0 auto; padding: 16px 28px 24px; border-top: 1px solid #4A413D; font-size: 13px; color: #B3A69B; }
+.py-toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); background: var(--py-ink); color: #fff; padding: 12px 20px; border-radius: 999px; font-weight: 600; opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s; z-index: 200; max-width: calc(100vw - 32px); }
+.py-toast.py-open { opacity: 1; transform: translate(-50%, 0); }
+
+.py-narrow { max-width: 760px; }
+.py-card { display: block; padding: 28px; background: var(--py-paper); border: 1px solid var(--py-line); border-radius: 18px; }
+.py-badge { display: inline-block; padding: 4px 14px; border-radius: 999px; background: var(--py-green); color: #fff; font-weight: 700; font-size: 14px; }
+.py-badge-wait { background: var(--py-butter); color: #3A2D12; }
+.py-badge-bad { background: #8A3030; }
+.py-card h1 { margin: 12px 0 6px; font-size: 36px; }
+.py-card > p { color: var(--py-ink2); }
+.py-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0; }
+.py-facts div { padding: 12px 14px; background: var(--py-bg); border-radius: 10px; min-width: 0; overflow-wrap: anywhere; }
+.py-facts small { display: block; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--py-ink2); }
+.py-lines { display: grid; gap: 0; }
+.py-lines div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--py-soft); }
+.py-lines span { min-width: 0; overflow-wrap: anywhere; }
+.py-lines b { flex: none; }
+.py-lines small { display: block; color: var(--py-ink2); }
+.py-lines .py-total { border-bottom: 0; font-size: 20px; font-weight: 800; }
+.py-act { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.py-msg:not(:empty) { margin-top: 16px; padding: 12px 14px; border-radius: 10px; background: #FBE9E7; color: #8A2A22; font-weight: 600; }
+.py-msg.py-good:not(:empty) { background: #E8F2EC; color: #1F4E3F; }
+
+@media (max-width: 1180px) {
+    .py-search { width: 220px; }
+    .py-head-row { gap: 14px; }
+}
+
+@media (max-width: 980px) {
+    .py-burger { display: inline-flex; align-items: center; justify-content: center; }
+    .py-nav { position: fixed; top: 0; left: 0; bottom: 0; width: min(320px, 86vw); background: var(--py-paper); z-index: 90; flex-direction: column; padding: 18px; transform: translateX(-100%); transition: transform 0.25s; }
+    .py-nav.py-open { transform: none; }
+    .py-nav-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .py-menu { flex-direction: column; }
+    .py-ml { font-size: 20px; padding: 12px 6px; }
+    .py-foot-in { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+    .py-wrap, .py-head-row, .py-foot-in, .py-foot-b { padding-left: 16px; padding-right: 16px; }
+    .py-head-row { gap: 8px; }
+    .py-head .py-logo span { display: none; }
+    .py-search { width: auto; flex: 1; min-width: 0; }
+    .py-site h1 { font-size: 34px; }
+    .py-site h2 { font-size: 25px; }
+    .py-sec { padding-top: 38px; }
+    .py-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
+    .py-card b { font-size: 17px; }
+    .py-foot-in { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 680px) {
+    .py-card { padding: 20px 16px; }
+    .py-facts { grid-template-columns: minmax(0, 1fr); }
+    .py-card h1 { font-size: 30px; }
+}

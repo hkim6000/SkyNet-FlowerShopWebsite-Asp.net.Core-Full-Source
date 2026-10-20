@@ -1,0 +1,24 @@
+<div class="hm-site" data-page="Home">
+<header class="hm-head" id="hm-head">
+    <div class="hm-head-row">
+        <button type="button" class="hm-burger" aria-label="Menu" onclick="HomeJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="hm-logo" href="Home" aria-label="Home"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#B8445F"/><g fill="#FBF7F2"><circle cx="20" cy="11" r="5"/><circle cx="29" cy="18" r="5"/><circle cx="26" cy="28" r="5"/><circle cx="14" cy="28" r="5"/><circle cx="11" cy="18" r="5"/></g><circle cx="20" cy="20" r="4" fill="#E9C46A"/></svg><span>{plhd_brand}</span></a>
+        <nav class="hm-nav" id="hm-nav" aria-label="Main">
+            <div class="hm-nav-top"><b>Menu</b><button type="button" class="hm-ibtn" aria-label="Close" onclick="HomeJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="hm-menu"><li><a class="hm-ml hm-on" href="Home">Home</a></li><li><a class="hm-ml" href="Shop">Shop</a></li><li><a class="hm-ml" href="About">About</a></li><li><a class="hm-ml" href="Track">Track an order</a></li><li><a class="hm-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <form class="hm-search" onsubmit="return HomeJs.go()" role="search">
+            <span class="hm-search-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></span>
+            <input type="search" id="hm-q" placeholder="Search bouquets" autocomplete="off" maxlength="40" oninput="HomeJs.search(this.value)" aria-label="Search bouquets">
+            <div class="hm-sugg" id="hm-sugg"></div>
+        </form>
+        <a class="hm-cart" href="Cart" aria-label="Cart"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><i class="hm-cartn" id="hm-cartn">0</i></a>
+    </div>
+    <div class="hm-scrim" id="hm-scrim" onclick="HomeJs.closeNav()"></div>
+</header>
+<main class="hm-main">
+{plhd_blocks}
+</main>
+<footer class="hm-foot">{plhd_foot}</footer>
+<div class="hm-toast" id="hm-toast" role="status" aria-live="polite"></div>
+</div>
