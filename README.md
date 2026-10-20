@@ -5,7 +5,9 @@ A responsive flower shop with online ordering, card payment and a staff area, fo
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/)
 [![NuGet](https://img.shields.io/nuget/v/TheSkyLite.SkyNet?label=TheSkyLite.SkyNet)](https://www.nuget.org/packages/TheSkyLite.SkyNet)
 
-> **Sample content.** Petalbound, its 14 bouquets, prices, delivery zones and people are placeholders; replace them in the staff area (**Content**, **Bouquets**, **Settings**) or in `data/site.json`. Orders, messages, staff and the activity log are saved for real in `data/*.json`.
+![Home page](docs/screenshot-home.png)
+
+> **Sample content.** Petalbound, its 14 bouquets, prices, delivery zones and people are placeholders; replace them in the staff area (**Pages**, **Bouquets**, **Settings**) or in `data/site.json`. Orders, messages, staff and the activity log are saved for real in `data/*.json`.
 
 ## Features
 
@@ -21,6 +23,8 @@ A responsive flower shop with online ordering, card payment and a staff area, fo
 - **Photos per bouquet:** up to 6 photos from the library, in the order you choose. The first is the main photo; the product page shows the others as a gallery.
 - **Staff accounts:** per-area View / Edit / Extra rights, 8-hour sessions, sign-in throttling, forced password change, every change and refused request logged
 - **No front-end build:** plain HTML, CSS and vanilla JavaScript
+
+![Desktop, tablet and phone](docs/screenshot-responsive.png)
 
 ## Getting started
 
@@ -124,9 +128,9 @@ public async Task<ApiResponse> List()
 - **Page text and pictures:** **Pages** in the staff area; shop name, phone, address and hours are in **Settings**; occasions are a tab on **Bouquets**
 - **Delivery zones, slots, tax, cut-off:** **Settings** in the staff area
 - **Brand name, colors, fonts:** the custom properties at the top of each `styles/*.css`
-- **New pictures and videos:** **Content > Media library** in the staff area, then choose them on a bouquet or a home page block
+- **New pictures and videos:** **Media library** in the staff area, then choose them on a bouquet or a home page block
 
 ## License
 
-- **This template:** MIT — free to use, modify and redistribute, including commercially (add the MIT text as `LICENSE` when you publish it).
+- **This template** (all source files, artwork and data in this repository): [MIT License](LICENSE) — free to use, modify and redistribute, including commercially.
 - **SkyNet Framework** (`TheSkyLite.SkyNet` NuGet package): proprietary, free to use including commercial use; see the license included in the package.
